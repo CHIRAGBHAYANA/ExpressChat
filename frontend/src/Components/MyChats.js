@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import { ChatState } from "../Context/ChatProvider";
 import ChatLoading from "./ChatLoading";
 import { getSender } from "../config/ChatLogic";
+import GroupChatModel from "./Miscellaneous/GroupChatModel";
 
 function MyChats() {
   const [loggedUser, setLoggedUser] = useState();
@@ -63,13 +64,15 @@ function MyChats() {
           alignItems="center"
         >
           My Chats
-          <Button
-            d="flex"
-            fontSize={{ base: "17px", md: "10px", lg: "17px" }}
-            rightIcon={<AddIcon />}
-          >
-            New Group Chat
-          </Button>
+          <GroupChatModel>
+            <Button
+              d="flex"
+              fontSize={{ base: "17px", md: "10px", lg: "17px" }}
+              rightIcon={<AddIcon />}
+            >
+              New Group Chat
+            </Button>
+          </GroupChatModel>
         </Box>
 
         <Box
