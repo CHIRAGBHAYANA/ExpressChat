@@ -95,6 +95,8 @@ function GroupChatModel({ children }) {
         isClosable: true,
         position: "bottom",
       });
+      setSearchResult([]);
+      setSelectedUsers([]);
     } catch (error) {
       toast({
         title: "Failed to Create the Chat!",
