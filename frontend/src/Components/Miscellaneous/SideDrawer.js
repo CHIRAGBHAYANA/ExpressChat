@@ -46,7 +46,6 @@ const SideDrawer = () => {
   const history = useHistory();
   const { isOpen, onOpen, onClose } = useDisclosure();
   const toast = useToast();
-  console.log(notification);
   const logoutHandler = () => {
     localStorage.removeItem("userInfo");
     history.push("/");
