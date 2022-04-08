@@ -20,7 +20,7 @@ import io from "socket.io-client";
 import Lottie from "react-lottie";
 import animationData from "../animations/95534-typing-guy.json";
 
-const ENDPOINT = "http://localhost:5000";
+const ENDPOINT = "https://expresschatmern.herokuapp.com/";
 var socket, selectedChatCompare;
 
 function SingleChat({ fetchAgain, setFetchAgain }) {
